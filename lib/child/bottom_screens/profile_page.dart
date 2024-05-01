@@ -8,11 +8,11 @@ import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:uuid/uuid.dart';
-import 'package:women_safety_app/child/bottom_page.dart';
-import 'package:women_safety_app/child/child_login_screen.dart';
-import 'package:women_safety_app/components/PrimaryButton.dart';
-import 'package:women_safety_app/components/custom_textfield.dart';
-import 'package:women_safety_app/utils/constants.dart';
+import 'package:empower_her/child/bottom_page.dart';
+import 'package:empower_her/child/child_login_screen.dart';
+import 'package:empower_her/components/PrimaryButton.dart';
+import 'package:empower_her/components/custom_textfield.dart';
+import 'package:empower_her/utils/constants.dart';
 
 class CheckUserStatusBeforeChatOnProfile extends StatelessWidget {
   const CheckUserStatusBeforeChatOnProfile({super.key});

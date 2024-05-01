@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:women_safety_app/utils/quotes.dart';
+import 'package:empower_her/utils/quotes.dart';
 
 class CustomAppBar extends StatelessWidget {
   // const CustomAppBar({super.key});

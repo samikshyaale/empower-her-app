@@ -1,10 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:women_safety_app/db/share_pref.dart';
-// import 'package:women_safety_app/child/bottom_screens/child_home_page.dart';
+import 'package:empower_her/db/share_pref.dart';
+// import 'package:empower_her/child/bottom_screens/child_home_page.dart';
 
-import 'package:women_safety_app/utils/flutter_background_services.dart';
+import 'package:empower_her/utils/flutter_background_services.dart';
 import 'child/bottom_page.dart';
 
 final navigatorkey = GlobalKey<ScaffoldMessengerState>();

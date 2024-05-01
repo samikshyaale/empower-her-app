@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:women_safety_app/child/child_login_screen.dart';
-import 'package:women_safety_app/model/user_model.dart';
-import 'package:women_safety_app/utils/constants.dart';
+import 'package:empower_her/child/child_login_screen.dart';
+import 'package:empower_her/model/user_model.dart';
+import 'package:empower_her/utils/constants.dart';
 import '../components/PrimaryButton.dart';
 import '../components/SecondaryButton.dart';
 import '../components/custom_textfield.dart';

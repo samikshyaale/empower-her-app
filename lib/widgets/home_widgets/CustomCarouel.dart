@@ -1,8 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:women_safety_app/utils/quotes.dart';
-import 'package:women_safety_app/widgets/home_widgets/safewebview.dart';
+import 'package:empower_her/utils/quotes.dart';
+import 'package:empower_her/widgets/home_widgets/safewebview.dart';
 
 class CustomCarouel extends StatelessWidget {
   const CustomCarouel({Key? key}) : super(key: key);

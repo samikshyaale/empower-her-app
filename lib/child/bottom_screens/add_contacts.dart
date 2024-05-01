@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:women_safety_app/child/bottom_screens/contacts_page.dart';
-import 'package:women_safety_app/components/PrimaryButton.dart';
-import 'package:women_safety_app/db/db_services.dart';
-import 'package:women_safety_app/model/contactsm.dart';
+import 'package:empower_her/child/bottom_screens/contacts_page.dart';
+import 'package:empower_her/components/PrimaryButton.dart';
+import 'package:empower_her/db/db_services.dart';
+import 'package:empower_her/model/contactsm.dart';
 
 class AddContactsPage extends StatefulWidget {
   const AddContactsPage({super.key});

@@ -5,13 +5,13 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:women_safety_app/db/db_services.dart';
-import 'package:women_safety_app/model/contactsm.dart';
-import 'package:women_safety_app/widgets/home_widgets/CustomCarouel.dart';
-import 'package:women_safety_app/widgets/home_widgets/custom_appBar.dart';
-import 'package:women_safety_app/widgets/home_widgets/emergency.dart';
-import 'package:women_safety_app/widgets/home_widgets/safehome/SafeHome.dart';
-import 'package:women_safety_app/widgets/live_safe.dart';
+import 'package:empower_her/db/db_services.dart';
+import 'package:empower_her/model/contactsm.dart';
+import 'package:empower_her/widgets/home_widgets/CustomCarouel.dart';
+import 'package:empower_her/widgets/home_widgets/custom_appBar.dart';
+import 'package:empower_her/widgets/home_widgets/emergency.dart';
+import 'package:empower_her/widgets/home_widgets/safehome/SafeHome.dart';
+import 'package:empower_her/widgets/live_safe.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

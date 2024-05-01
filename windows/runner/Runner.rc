@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "women_safety_app" "\0"
+            VALUE "FileDescription", "empower_her" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "women_safety_app" "\0"
+            VALUE "InternalName", "empower_her" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "women_safety_app.exe" "\0"
-            VALUE "ProductName", "women_safety_app" "\0"
+            VALUE "OriginalFilename", "empower_her.exe" "\0"
+            VALUE "ProductName", "empower_her" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

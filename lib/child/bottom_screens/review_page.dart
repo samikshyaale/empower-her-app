@@ -4,10 +4,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:women_safety_app/components/PrimaryButton.dart';
-import 'package:women_safety_app/components/SecondaryButton.dart';
-import 'package:women_safety_app/components/custom_textfield.dart';
-import 'package:women_safety_app/utils/constants.dart';
+import 'package:empower_her/components/PrimaryButton.dart';
+import 'package:empower_her/components/SecondaryButton.dart';
+import 'package:empower_her/components/custom_textfield.dart';
+import 'package:empower_her/utils/constants.dart';
 
 class ReviewPage extends StatefulWidget {
   @override
@@ -88,7 +88,7 @@ class _ReviewPageState extends State<ReviewPage> {
     await FirebaseFirestore.instance.collection('reviews').add({
       'location': locationC.text,
       'views': viewsC.text,
-      "ratings": ratings
+      "ratings": ratings ?? 0.0 // Ensure ratings is always a double
     }).then((value) {
       setState(() {
         isSaving = false;
@@ -149,7 +149,8 @@ class _ReviewPageState extends State<ReviewPage> {
                                             fontSize: 16, color: Colors.black),
                                       ),
                                       RatingBar.builder(
-                                        initialRating: data['ratings'],
+                                        initialRating: data['ratings']
+                                            .toDouble(), // Convert int to double
                                         minRating: 1,
                                         direction: Axis.horizontal,
                                         itemCount: 5,
@@ -158,8 +159,9 @@ class _ReviewPageState extends State<ReviewPage> {
                                         itemPadding: const EdgeInsets.symmetric(
                                             horizontal: 4.0),
                                         itemBuilder: (context, _) => const Icon(
-                                            Icons.star,
-                                            color: kColorDarkRed),
+                                          Icons.star,
+                                          color: kColorDarkRed,
+                                        ),
                                         onRatingUpdate: (rating) {
                                           setState(() {
                                             ratings = rating;

@@ -11,8 +11,8 @@ import 'package:geolocator/geolocator.dart';
 import 'package:shake/shake.dart';
 import 'package:telephony/telephony.dart';
 import 'package:vibration/vibration.dart';
-import 'package:women_safety_app/db/db_services.dart';
-import 'package:women_safety_app/model/contactsm.dart';
+import 'package:empower_her/db/db_services.dart';
+import 'package:empower_her/model/contactsm.dart';
 
 sendMessage(String messageBody) async {
   List<TContact> contactList = await DatabaseHelper().getContactList();

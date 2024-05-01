@@ -1,14 +1,14 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:women_safety_app/child/bottom_page.dart';
-import 'package:women_safety_app/components/PrimaryButton.dart';
-import 'package:women_safety_app/components/SecondaryButton.dart';
-import 'package:women_safety_app/components/custom_textfield.dart';
-import 'package:women_safety_app/child/register_child.dart';
-import 'package:women_safety_app/db/share_pref.dart';
-import 'package:women_safety_app/parent/parent_register_screen.dart';
-import 'package:women_safety_app/utils/constants.dart';
+import 'package:empower_her/child/bottom_page.dart';
+import 'package:empower_her/components/PrimaryButton.dart';
+import 'package:empower_her/components/SecondaryButton.dart';
+import 'package:empower_her/components/custom_textfield.dart';
+import 'package:empower_her/child/register_child.dart';
+import 'package:empower_her/db/share_pref.dart';
+import 'package:empower_her/parent/parent_register_screen.dart';
+import 'package:empower_her/utils/constants.dart';
 
 import '../parent/parent_home_screen.dart';
 

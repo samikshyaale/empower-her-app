@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:women_safety_app/chat_module/message_text_field.dart';
-import 'package:women_safety_app/chat_module/singleMessage.dart';
+import 'package:empower_her/chat_module/message_text_field.dart';
+import 'package:empower_her/chat_module/singleMessage.dart';
 
 import '../utils/constants.dart';
 

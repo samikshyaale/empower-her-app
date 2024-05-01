@@ -1,4 +1,4 @@
-# women_safety_app
+# empower_her
 
 A new Flutter project.
 

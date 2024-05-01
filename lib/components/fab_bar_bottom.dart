@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:women_safety_app/utils/constants.dart';
+import 'package:empower_her/utils/constants.dart';
 
 class FABBottomAppBarItem {
   FABBottomAppBarItem({required this.iconData, required this.text});

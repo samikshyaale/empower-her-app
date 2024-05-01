@@ -2,8 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:women_safety_app/child/bottom_page.dart';
-import 'package:women_safety_app/components/PrimaryButton.dart';
+import 'package:empower_her/child/bottom_page.dart';
+import 'package:empower_her/components/PrimaryButton.dart';
 
 import '../child/bottom_screens/profile_page.dart';
 import '../parent/parent_register_screen.dart';
@@ -27,8 +27,8 @@ class SettingsPage extends StatefulWidget {
 class _SettingsPageState extends State<SettingsPage> {
   List<ProfileItem> _infoItems = [
     ProfileItem(item: 'personal', title: 'Personal information'),
-    ProfileItem(item: 'settings', title: 'Settings'),
-    ProfileItem(item: 'admin', title: 'Admin Login'),
+    // ProfileItem(item: 'settings', title: 'Settings'),
+    // ProfileItem(item: 'admin', title: 'Admin Login'),
     ProfileItem(
         item: displayName == null ? 'login' : "logout",
         title: displayName == null ? 'login' : "logout"),
