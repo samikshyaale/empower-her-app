@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:empower_her/chat_module/chat_screen.dart';
 import 'package:empower_her/child/child_login_screen.dart';
-import 'package:empower_her/db/share_pref.dart';
 import 'package:empower_her/parent/parent_home_screen.dart';
 
 import '../../utils/constants.dart';
