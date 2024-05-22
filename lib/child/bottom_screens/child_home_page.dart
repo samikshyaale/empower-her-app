@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:empower_her/widgets/home_widgets/CustomVideoCarousel.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:geocoding/geocoding.dart';
@@ -129,7 +130,7 @@ class _HomeScreenState extends State<HomeScreen> {
     getRandomQuote();
     super.initState();
     _getPermission();
-    // _getCurrentLocation();
+    _getCurrentLocation();
 
     ////// shake feature ///
 
@@ -250,6 +251,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                     SizedBox(height: 10),
+                    CustomVideoCarousel(),
                     CustomCarouel(),
                     SizedBox(height: 10),
                     Align(

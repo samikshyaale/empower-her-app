@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:background_sms/background_sms.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -18,14 +20,21 @@ class _SafeHomeState extends State<SafeHome> {
   LocationPermission? permission;
 
   _isPermissionGranted() async => await Permission.sms.status.isGranted;
-  _sendSms(String phoneNumber, String message, {int? simSlot}) async {
-    SmsStatus result = await BackgroundSms.sendMessage(
-        phoneNumber: phoneNumber, message: message, simSlot: 1);
-    if (result == SmsStatus.sent) {
-      print("Sent");
-      Fluttertoast.showToast(msg: "send");
-    } else {
-      Fluttertoast.showToast(msg: "failed");
+  // _sendSms(String phoneNumber, String message, {int? simSlot}) async {
+  //   SmsStatus result = await BackgroundSms.sendMessage(
+  //       phoneNumber: phoneNumber, message: message, simSlot: 1);
+  //   if (result == SmsStatus.sent) {
+  //     print("Sent");
+  //     Fluttertoast.showToast(msg: "send");
+  //   } else {
+  //     Fluttertoast.showToast(msg: "failed");
+  //   }
+  // }
+
+  void requestSmsPermission() async {
+    var status = await Permission.sms.status;
+    if (!status.isGranted) {
+      await Permission.sms.request();
     }
   }
 
@@ -95,6 +104,25 @@ class _SafeHomeState extends State<SafeHome> {
     super.initState();
 
     _getCurrentLocation();
+    requestSmsPermission();
+  }
+
+  _sendSms(String phoneNumber, String message, {int? simSlot}) async {
+    try {
+      SmsStatus result = await BackgroundSms.sendMessage(
+          phoneNumber: phoneNumber, message: message, simSlot: 1);
+      if (result == SmsStatus.sent) {
+        print("SMS sent to $phoneNumber");
+        Fluttertoast.showToast(
+            msg: "Message sent successfully to $phoneNumber");
+      } else {
+        print("Failed to send SMS to $phoneNumber: $result");
+        Fluttertoast.showToast(msg: "Failed to send message to $phoneNumber");
+      }
+    } catch (e) {
+      print("Error sending SMS to $phoneNumber: $e");
+      Fluttertoast.showToast(msg: "Error sending message to $phoneNumber: $e");
+    }
   }
 
   showModelSafeHome(BuildContext context) {
