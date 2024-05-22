@@ -32,7 +32,7 @@ class _CustomVideoCarouselState extends State<CustomVideoCarousel> {
           initialVideoId: videoId,
           flags: const YoutubePlayerFlags(
             autoPlay: true,
-            mute: false,
+            mute: true,
           ),
         ),
       );
